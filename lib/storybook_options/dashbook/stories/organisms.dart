@@ -6,9 +6,6 @@ void addOrganisms(Dashbook dashbook) {
   dashbook
       .storiesOf("Organisms")
       .decorator(
-        CenterDecorator(),
-      )
-      .decorator(
         PaddingDecorator(),
       )
       .add(

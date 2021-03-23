@@ -9,9 +9,7 @@ import 'package:flutter_storybook_poc/storybook_options/dashbook/decorators/padd
 void addAtoms(Dashbook dashbook) {
   dashbook
       .storiesOf("Atoms")
-      .decorator(
-        CenterDecorator(),
-      )
+      .decorator(PaddingDecorator())
       .add(
         "Button",
         (context) => Button(
@@ -31,7 +29,6 @@ void addAtoms(Dashbook dashbook) {
         "StyledTitle",
         (context) => StyledTitle(text: context.textProperty('text', "Hello!")),
       )
-      .decorator(PaddingDecorator())
       .add(
         "InputText",
         (context) => InputText(
