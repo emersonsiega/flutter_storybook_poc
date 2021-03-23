@@ -31,7 +31,9 @@ List<Story> addAtoms() {
                 "https://images4.alphacoders.com/118/thumb-1920-118904.jpg",
           ),
           height: k.slider(label: 'height', initial: 200, min: 100, max: 600),
-          width: k.slider(label: 'width', initial: 350, min: 100, max: 600),
+          width: k.boolean(label: 'Use width', initial: true)
+              ? k.slider(label: 'width', initial: 350, min: 100, max: 600)
+              : null,
         );
       },
     ),
