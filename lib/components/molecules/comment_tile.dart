@@ -39,7 +39,7 @@ class _CommentTileState extends State<CommentTile> {
       children: [
         Expanded(
           child: InputText(
-            label: "Comentário",
+            label: "Comments",
             onChanged: _onChangeComment,
             value: _comment,
           ),
@@ -47,7 +47,7 @@ class _CommentTileState extends State<CommentTile> {
         SizedBox(width: 30),
         Button(
           onPressed: _comment.isNotEmpty ? _onConfirm : null,
-          text: "Adicionar",
+          text: "Add",
         ),
       ],
     );

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import './storybook_options/dashbook/dashbook.dart';
+
+import './config/app_theme.dart';
 import './home.dart';
 
 void main() {
@@ -12,15 +15,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Storybook',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-      ),
+      theme: getAppTheme(),
       initialRoute: "/",
       routes: {
         '/': (_) => Home(),
-        '/dashbook': (_) => Scaffold(
-              appBar: AppBar(title: Text("Daskbook")),
-            ),
+        '/dashbook': (_) => DashbookView(),
         '/storyboard': (_) => Scaffold(
               appBar: AppBar(title: Text("Storyboard")),
             ),

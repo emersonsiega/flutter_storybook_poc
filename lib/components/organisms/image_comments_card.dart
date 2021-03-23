@@ -34,9 +34,9 @@ class _ImageCommentsCardState extends State<ImageCommentsCard> {
         SizedBox(height: 10),
         CommentTile(onAddComment: _onAddComment),
         SizedBox(height: 30),
-        StyledTitle(text: "Comentários"),
+        StyledTitle(text: "Comments"),
         if (_comments.isEmpty)
-          Text("Nenhum comentário adicionado.", textAlign: TextAlign.center),
+          Text("No comments.", textAlign: TextAlign.center),
         if (_comments.isNotEmpty)
           ..._comments.reversed.map(
             (comment) => Padding(

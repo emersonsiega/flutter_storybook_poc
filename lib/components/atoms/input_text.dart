@@ -34,10 +34,8 @@ class _InputTextState extends State<InputText> {
 
   @override
   void didUpdateWidget(covariant InputText oldWidget) {
-    if (oldWidget.value != widget.value) {
-      setState(() {
-        _controller.text = widget.value;
-      });
+    if (_controller.text != widget.value) {
+      _controller.text = widget.value;
     }
 
     super.didUpdateWidget(oldWidget);
