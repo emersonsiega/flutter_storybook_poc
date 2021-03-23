@@ -30,6 +30,8 @@ class NetworkImageContainerStory extends Story {
       Center(
         child: NetworkImageContainer(
           imageURL: "https://images4.alphacoders.com/118/thumb-1920-118904.jpg",
+          height: 200,
+          width: 400,
         ),
       ),
     ];
