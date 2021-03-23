@@ -10,9 +10,10 @@ import 'stories/organisms.dart';
 class DashbookView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final dashbook = Dashbook(
+    final dashbook = Dashbook.dualTheme(
       title: 'Dashbook Example',
-      theme: getAppTheme(),
+      light: getAppTheme(),
+      dark: getAppDarkTheme(),
     );
 
     addAtoms(dashbook);
