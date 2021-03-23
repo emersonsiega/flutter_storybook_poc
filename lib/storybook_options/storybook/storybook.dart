@@ -12,6 +12,7 @@ class StorybookView extends StatelessWidget {
     return Storybook(
       theme: getAppTheme(),
       darkTheme: getAppDarkTheme(),
+      themeMode: ThemeMode.system,
       children: [
         ...addAtoms(),
         ...addMolecules(),
