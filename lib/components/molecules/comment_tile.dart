@@ -26,6 +26,9 @@ class _CommentTileState extends State<CommentTile> {
 
   void _onConfirm() {
     widget.onAddComment(_comment);
+    setState(() {
+      _comment = "";
+    });
   }
 
   @override
@@ -35,7 +38,11 @@ class _CommentTileState extends State<CommentTile> {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Expanded(
-          child: InputText(label: "Comentário", onChanged: _onChangeComment),
+          child: InputText(
+            label: "Comentário",
+            onChanged: _onChangeComment,
+            value: _comment,
+          ),
         ),
         SizedBox(width: 30),
         Button(
