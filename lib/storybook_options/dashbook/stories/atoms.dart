@@ -1,4 +1,5 @@
 import 'package:dashbook/dashbook.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_storybook_poc/components/atoms/button.dart';
 import 'package:flutter_storybook_poc/components/atoms/input_text.dart';
 import 'package:flutter_storybook_poc/components/atoms/network_image_container.dart';
@@ -23,6 +24,7 @@ void addAtoms(Dashbook dashbook) {
         (context) => NetworkImageContainer(
           imageURL: context.textProperty('imageURL',
               "https://images4.alphacoders.com/118/thumb-1920-118904.jpg"),
+          height: context.numberProperty('height', 200),
         ),
       )
       .add(
@@ -36,6 +38,15 @@ void addAtoms(Dashbook dashbook) {
           label: context.textProperty("label", "Name"),
           placeholder: context.textProperty("placeholder", 'Insert your name'),
           onChanged: (_) {},
+          inputAction: context.listProperty(
+            'inputAction',
+            TextInputAction.next,
+            [
+              TextInputAction.next,
+              TextInputAction.done,
+              TextInputAction.search,
+            ],
+          ),
         ),
       );
 }
