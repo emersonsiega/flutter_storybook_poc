@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   dashbook: ^0.1.0
+  storyboard: ^1.0.0
 
   cupertino_icons: ^1.0.2
 

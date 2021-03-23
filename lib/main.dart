@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import './storybook_options/dashbook/dashbook.dart';
+import './storybook_options/storyboard/storyboard.dart';
 
 import './config/app_theme.dart';
 import './home.dart';
@@ -20,9 +21,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (_) => Home(),
         '/dashbook': (_) => DashbookView(),
-        '/storyboard': (_) => Scaffold(
-              appBar: AppBar(title: Text("Storyboard")),
-            ),
+        '/storyboard': (_) => StoryboardView(),
         '/storybook_flutter': (_) => Scaffold(
               appBar: AppBar(title: Text("Storybook Flutter")),
             ),
