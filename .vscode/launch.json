@@ -19,9 +19,10 @@
             "deviceId": "chrome"
         },
         {
-            "name": "flutter_storybook_poc",
+            "name": "Flutter",
             "request": "launch",
-            "type": "dart"
+            "type": "dart",
+            "program": "lib/main.dart"
         }
     ]
 }
