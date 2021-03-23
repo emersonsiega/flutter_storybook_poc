@@ -19,17 +19,13 @@ List<Story> addMolecules() {
       section: _molecules,
       name: "NetworkImageCard",
       builder: (BuildContext context, KnobsBuilder k) {
-        return CommentTile(
-          onAddComment: (_) {
-            return NetworkImageCard(
-              title: k.text(label: 'title', initial: "The lord of the rings"),
-              imageURL: k.text(
-                label: 'imageURL',
-                initial:
-                    "https://images4.alphacoders.com/118/thumb-1920-118904.jpg",
-              ),
-            );
-          },
+        return NetworkImageCard(
+          title: k.text(label: 'title', initial: "The lord of the rings"),
+          imageURL: k.text(
+            label: 'imageURL',
+            initial:
+                "https://images4.alphacoders.com/118/thumb-1920-118904.jpg",
+          ),
         );
       },
     ),
