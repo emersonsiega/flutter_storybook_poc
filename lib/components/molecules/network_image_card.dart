@@ -31,7 +31,6 @@ class NetworkImageCard extends StatelessWidget {
             NetworkImageContainer(
               imageURL: imageURL,
               width: double.infinity,
-              fit: BoxFit.fitWidth,
             ),
           ],
         ),

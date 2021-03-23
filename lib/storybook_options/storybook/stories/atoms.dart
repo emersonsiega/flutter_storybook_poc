@@ -31,18 +31,6 @@ List<Story> addAtoms() {
                 "https://images4.alphacoders.com/118/thumb-1920-118904.jpg",
           ),
           height: k.slider(label: 'height', initial: 200, min: 100, max: 600),
-          fit: k.options(
-            label: 'fit',
-            initial: BoxFit.cover,
-            options: [
-              Option("Cover", BoxFit.cover),
-              Option("Contain", BoxFit.contain),
-              Option("Fill", BoxFit.fill),
-              Option("Fit Height", BoxFit.fitHeight),
-              Option("Fit Width", BoxFit.fitWidth),
-              Option("Scale Down", BoxFit.scaleDown),
-            ],
-          ),
         );
       },
     ),
