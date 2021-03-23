@@ -21,8 +21,8 @@ class NetworkImageContainer extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: Color(0xff5e5e5e),
-            blurRadius: 5,
-            spreadRadius: 2,
+            blurRadius: 3,
+            spreadRadius: 1,
           ),
         ],
       ),

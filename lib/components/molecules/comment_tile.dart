@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_storybook_poc/components/atoms/button.dart';
-import 'package:flutter_storybook_poc/components/atoms/input_text.dart';
+
+import '../atoms/button.dart';
+import '../atoms/input_text.dart';
 
 class CommentTile extends StatefulWidget {
   final void Function(String) onAddComment;
