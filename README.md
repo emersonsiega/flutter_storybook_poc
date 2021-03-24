@@ -1,16 +1,36 @@
 # flutter_storybook_poc
 
-A new Flutter project.
+This project compares the Storybook options for Flutter.  
 
-## Getting Started
+[Demo here](https://emersonsiega.github.io/flutter_storybook_poc)
 
-This project is a starting point for a Flutter application.
+## Used packages
 
-A few resources to get you started if this is your first Flutter project:
+### [Dashbook](https://github.com/erickzanardo/dashbook)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- Pros
+    - Multiple themes
+    - Link to open the source code
+    - Used by [Flame](https://flame-engine.github.io/flame_example/#/)
+- Cons
+    - The properties drawer opens over the component
+        - It's ok for mobile, but for desktop and web, it looks weird
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### [Storyboard](https://github.com/ilikerobots/storyboard)
+
+- Pros
+    - 🤷🏻‍♂️
+- Cons
+    - There's no option to change the components arguments
+    - The components are rendered in an accordion
+    - There's no option to group components
+
+### [Storybook Flutter](https://github.com/ookami-kb/storybook_flutter)
+
+- Pros
+    - Automatic, light and dark themes
+    - Highly customizable
+    - More friendly UI
+    - Slider option to change int/double properties
+- Cons
+    - The layout works better for web or desktop
