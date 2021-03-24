@@ -3,7 +3,7 @@ import 'package:storybook_flutter/storybook_flutter.dart';
 
 import 'package:flutter_storybook_poc/components/atoms/button.dart';
 import 'package:flutter_storybook_poc/components/atoms/input_text.dart';
-import 'package:flutter_storybook_poc/components/atoms/network_image_container.dart';
+import 'package:flutter_storybook_poc/components/atoms/asset_image_container.dart';
 import 'package:flutter_storybook_poc/components/atoms/styled_title.dart';
 
 List<Story> addAtoms() {
@@ -22,14 +22,10 @@ List<Story> addAtoms() {
     ),
     Story(
       section: _section,
-      name: "NetworkImageContainer",
+      name: "AssetImageContainer",
       builder: (BuildContext context, KnobsBuilder k) {
-        return NetworkImageContainer(
-          imageURL: k.text(
-            label: 'imageURL',
-            initial:
-                "https://images4.alphacoders.com/118/thumb-1920-118904.jpg",
-          ),
+        return AssetImageContainer(
+          image: "assets/image.jpg",
           height: k.slider(label: 'height', initial: 200, min: 100, max: 600),
           width: k.boolean(label: 'Use width', initial: true)
               ? k.slider(label: 'width', initial: 350, min: 100, max: 600)

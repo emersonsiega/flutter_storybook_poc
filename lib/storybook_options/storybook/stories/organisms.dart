@@ -13,11 +13,7 @@ List<Story> addOrganisms() {
       builder: (BuildContext context, KnobsBuilder k) {
         return ImageCommentsCard(
           title: k.text(label: 'title', initial: "The lord of the rings"),
-          imageURL: k.text(
-            label: 'imageURL',
-            initial:
-                "https://images4.alphacoders.com/118/thumb-1920-118904.jpg",
-          ),
+          image: "assets/image.jpg",
         );
       },
     ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:storybook_flutter/storybook_flutter.dart';
 
-import 'package:flutter_storybook_poc/components/molecules/network_image_card.dart';
+import 'package:flutter_storybook_poc/components/molecules/asset_image_card.dart';
 import 'package:flutter_storybook_poc/components/molecules/comment_tile.dart';
 
 List<Story> addMolecules() {
@@ -17,15 +17,11 @@ List<Story> addMolecules() {
     ),
     Story(
       section: _molecules,
-      name: "NetworkImageCard",
+      name: "AssetImageCard",
       builder: (BuildContext context, KnobsBuilder k) {
-        return NetworkImageCard(
+        return AssetImageCard(
           title: k.text(label: 'title', initial: "The lord of the rings"),
-          imageURL: k.text(
-            label: 'imageURL',
-            initial:
-                "https://images4.alphacoders.com/118/thumb-1920-118904.jpg",
-          ),
+          image: "assets/image.jpg",
         );
       },
     ),

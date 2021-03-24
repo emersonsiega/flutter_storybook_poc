@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class NetworkImageContainer extends StatelessWidget {
-  final String imageURL;
+class AssetImageContainer extends StatelessWidget {
+  final String image;
   final double height;
   final double width;
 
-  const NetworkImageContainer({
+  const AssetImageContainer({
     Key key,
-    @required this.imageURL,
+    @required this.image,
     this.height: 200,
     this.width,
   }) : super(key: key);
@@ -20,7 +20,7 @@ class NetworkImageContainer extends StatelessWidget {
       decoration: BoxDecoration(
         image: DecorationImage(
           fit: BoxFit.cover,
-          image: NetworkImage(imageURL),
+          image: AssetImage(image),
         ),
         boxShadow: [
           BoxShadow(

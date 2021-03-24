@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:storyboard/storyboard.dart';
 
 import 'package:flutter_storybook_poc/components/atoms/button.dart';
-import 'package:flutter_storybook_poc/components/atoms/network_image_container.dart';
+import 'package:flutter_storybook_poc/components/atoms/asset_image_container.dart';
 
 class AtomsListStory extends Story {
   String get title => "Atoms";
@@ -17,8 +17,8 @@ class AtomsListStory extends Story {
         ),
       ),
       Center(
-        child: NetworkImageContainer(
-          imageURL: "https://images4.alphacoders.com/118/thumb-1920-118904.jpg",
+        child: AssetImageContainer(
+          image: "assets/image.jpg",
           height: 200,
           width: 400,
         ),

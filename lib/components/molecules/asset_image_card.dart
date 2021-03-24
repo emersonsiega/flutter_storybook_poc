@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-import '../atoms/network_image_container.dart';
+import '../atoms/asset_image_container.dart';
 import '../atoms/styled_title.dart';
 
-class NetworkImageCard extends StatelessWidget {
+class AssetImageCard extends StatelessWidget {
   final String title;
-  final String imageURL;
+  final String image;
 
-  const NetworkImageCard({
+  const AssetImageCard({
     Key key,
     @required this.title,
-    @required this.imageURL,
+    @required this.image,
   }) : super(key: key);
 
   @override
@@ -28,8 +28,8 @@ class NetworkImageCard extends StatelessWidget {
               align: TextAlign.left,
             ),
             SizedBox(height: 6),
-            NetworkImageContainer(
-              imageURL: imageURL,
+            AssetImageContainer(
+              image: image,
               width: double.infinity,
             ),
           ],

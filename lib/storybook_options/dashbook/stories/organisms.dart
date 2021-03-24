@@ -12,8 +12,7 @@ void addOrganisms(Dashbook dashbook) {
         "ImageCommentsCard",
         (context) => ImageCommentsCard(
           title: context.textProperty('title', "The lord of the rings"),
-          imageURL: context.textProperty('imageURL',
-              "https://images4.alphacoders.com/118/thumb-1920-118904.jpg"),
+          image: "assets/image.jpg",
         ),
       );
 }

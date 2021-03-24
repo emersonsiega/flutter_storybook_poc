@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_storybook_poc/components/atoms/styled_title.dart';
 import 'package:flutter_storybook_poc/components/molecules/comment_tile.dart';
-import 'package:flutter_storybook_poc/components/molecules/network_image_card.dart';
+import 'package:flutter_storybook_poc/components/molecules/asset_image_card.dart';
 
 class ImageCommentsCard extends StatefulWidget {
   final String title;
-  final String imageURL;
+  final String image;
 
   const ImageCommentsCard({
     Key key,
     @required this.title,
-    @required this.imageURL,
+    @required this.image,
   }) : super(key: key);
 
   @override
@@ -30,7 +30,7 @@ class _ImageCommentsCardState extends State<ImageCommentsCard> {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        NetworkImageCard(title: widget.title, imageURL: widget.imageURL),
+        AssetImageCard(title: widget.title, image: widget.image),
         SizedBox(height: 10),
         CommentTile(onAddComment: _onAddComment),
         SizedBox(height: 30),
